@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>sobsobatku</title>
+    <!-- Link eksternal untuk mengambil font dari Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0"
+    />
+
+    <!-- Link eksternal untuk mengambil file CSS dari folder styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- Container untuk elemen-elemen login -->
+    <div class="login">
+      <!-- Container Gambar -->
+      <div class="avatar">
+        <img src="./assets/gambar.jpg"/>
+      </div>
+
+      <!-- Judul halaman login -->
+      <h2>Login</h2>
+      <!-- Subjudul selamat datang -->
+      <h3>Selamat Datang Sobat!</h3>
+
+      <!-- Formulir untuk masuk -->
+      <form class="login-form">
+        <!-- Kotak input untuk email -->
+        <div class="textbox">
+          <input type="email" placeholder="Email" />
+          <!-- Icon untuk email -->
+          <span class="material-symbols-outlined"> person </span>
+        </div>
+
+        <!-- Kotak input untuk password -->
+        <div class="textbox">
+          <input type="password" placeholder="Password" />
+          <!-- Icon untuk password -->
+          <span class="material-symbols-outlined"> lock </span>
+        </div>
+
+        <!-- Membuat internal javascript untuk alert-->
+        <input class="btn" type="button" onclick="Submit()" value="Login">
+        
+        <!-- Container untuk menampilkan waktu -->
+        <div class="tgl">
+          <p id="waktu"></p>
+        </div>
+      </form>
+    </div>
+    <!-- Mengambil file script JavaScript dari folder script -->
+    <script src="./script/main.js"></script>
+    
+    <!-- Mengambil library SweetAlert2 untuk notifikasi -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </body>
+</html>
